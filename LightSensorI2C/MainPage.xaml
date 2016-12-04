@@ -7,7 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 
-    </Grid>
+        <TextBox x:Name="textBoxLight" Grid.Row="1" Grid.Column="1" Margin="15" Text="..." IsReadOnly="True" 
+                     HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12"/>
+        <TextBox x:Name="textBlockStatus"  Margin="7" Text="Waiting I2c..." 
+                            IsReadOnly="True" HorizontalAlignment="Left" FontSize="16"/>
+
+        <Button x:Name="buttonExit" Content="Exit" Margin="15" Click="buttonExit_Click"/>
+
+    </StackPanel>
 </Page>
